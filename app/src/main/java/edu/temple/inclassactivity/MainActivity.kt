@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         val fragment = ImageDisplayFragment.newInstance(imageArray)
         supportFragmentManager
             .beginTransaction()
-            .add(R.id.ImageDisplayFragment, fragment)
+            .add(R.id.fragmentContainerView, fragment)
             .commit()
     }
 }
